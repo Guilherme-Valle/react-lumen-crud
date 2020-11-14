@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b57c0767-2781-4e9c-8bf0-d769a9cd9250" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lumenreactfront/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/lumenreactfront/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lumenreactfront/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lumenreactfront/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/lumenreactfront/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lumenreactfront/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/lumenreactfront/package.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -27,23 +24,33 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="js" value="7" />
+          <entry key="js" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JavaScript" value="7" />
+          <entry key="JavaScript" value="13" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="js" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JavaScript" value="2" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lumenreactfront/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
-              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+            <state relative-caret-position="161">
+              <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -51,7 +58,32 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lumenreactfront/config/webpack.config.dev.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="161">
+              <caret line="162" column="15" lean-forward="true" selection-start-line="162" selection-start-column="15" selection-end-line="162" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lumenreactfront/config/webpack.config.prod.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="492">
+              <caret line="186" column="39" lean-forward="true" selection-start-line="186" selection-start-column="39" selection-end-line="186" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>test: /\</find>
+      <find>test: css</find>
+      <find>/\.css</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -60,6 +92,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/lumenreactfront/src/App.js" />
+        <option value="$PROJECT_DIR$/lumenreactfront/config/webpack.config.dev.js" />
+        <option value="$PROJECT_DIR$/lumenreactfront/config/webpack.config.prod.js" />
       </list>
     </option>
   </component>
@@ -1089,7 +1123,6 @@
       <path value="$PROJECT_DIR$/lumenreactfront/node_modules/react-dom/package.json" />
       <path value="$PROJECT_DIR$/lumenreactfront/node_modules/react-error-overlay/package.json" />
       <path value="$PROJECT_DIR$/lumenreactfront/node_modules/react-is/package.json" />
-      <path value="$PROJECT_DIR$/lumenreactfront/node_modules/react-scripts/package.json" />
       <path value="$PROJECT_DIR$/lumenreactfront/node_modules/react/package.json" />
       <path value="$PROJECT_DIR$/lumenreactfront/node_modules/read-pkg-up/node_modules/find-up/package.json" />
       <path value="$PROJECT_DIR$/lumenreactfront/node_modules/read-pkg-up/node_modules/path-exists/package.json" />
@@ -1500,6 +1533,12 @@
               <item name="project-front" type="b2602c69:ProjectViewProjectNode" />
               <item name="project-front" type="462c0819:PsiDirectoryNode" />
               <item name="lumenreactfront" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project-front" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project-front" type="462c0819:PsiDirectoryNode" />
+              <item name="lumenreactfront" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -1537,12 +1576,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1605390065736</updated>
-      <workItem from="1605390068187" duration="357000" />
+      <workItem from="1605390068187" duration="937000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="357000" />
+    <option name="totallyTimeSpent" value="937000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
@@ -1576,11 +1615,25 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/lumenreactfront/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        <state relative-caret-position="161">
+          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lumenreactfront/config/webpack.config.dev.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="162" column="15" lean-forward="true" selection-start-line="162" selection-start-column="15" selection-end-line="162" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lumenreactfront/config/webpack.config.prod.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="492">
+          <caret line="186" column="39" lean-forward="true" selection-start-line="186" selection-start-column="39" selection-end-line="186" selection-end-column="39" />
         </state>
       </provider>
     </entry>
