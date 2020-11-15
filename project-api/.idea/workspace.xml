@@ -20,15 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e88685e2-1e4e-4b74-8718-83d124f4f1eb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lumenreactapi/app/Http/Middleware/CorsMiddleware.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../project-front/lumenreactfront/src/components/BookList/Book/Book.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../project-front/lumenreactfront/src/components/BookList/BookList.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../project-front/lumenreactfront/src/components/Navbar/Navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lumenreactapi/bootstrap/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/lumenreactapi/bootstrap/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../project-front/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../project-front/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../project-front/lumenreactfront/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../project-front/lumenreactfront/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../project-front/lumenreactfront/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../project-front/lumenreactfront/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../project-front/lumenreactfront/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../project-front/lumenreactfront/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../project-front/lumenreactfront/src/components/BookList/Book/Book.js" beforeDir="false" afterPath="$PROJECT_DIR$/../project-front/lumenreactfront/src/components/BookList/Book/Book.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../project-front/lumenreactfront/src/components/BookList/BookList.js" beforeDir="false" afterPath="$PROJECT_DIR$/../project-front/lumenreactfront/src/components/BookList/BookList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../project-front/lumenreactfront/src/components/Navbar/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/../project-front/lumenreactfront/src/components/Navbar/Navbar.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,7 +180,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1605389954732</updated>
-      <workItem from="1605389956028" duration="1666000" />
+      <workItem from="1605389956028" duration="3610000" />
     </task>
     <servers />
   </component>

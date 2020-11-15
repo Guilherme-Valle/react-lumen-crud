@@ -7,14 +7,21 @@ class BookList extends Component {
     state = {
         books: []
     };
-
     componentDidMount(){
+        this.getBooks();
+    }
+    getBooks(){
         axios.get('http://localhost:8000/api/v1/books')
             .then(res => {
                 this.setState({books: res.data});
             })
     }
-
+    deleteBookHandler(id){
+        axios.delete(`http://localhost:8000/api/v1/book/${id}`)
+            .then(() => {
+                this.getBooks();
+            })
+    }
     render(){
         return (
             <div>
@@ -23,7 +30,7 @@ class BookList extends Component {
                         <Grid container spacing={10} style={{padding: 24}}>
                             {this.state.books.map(currentBook => (
                                 <Grid item xs={12} sm={6} lg={4} xl={3} key={currentBook.id}>
-                                    <Book book={currentBook} />
+                                    <Book book={currentBook} delete={() => this.deleteBookHandler(currentBook.id)} />
                                 </Grid>
                             ))}
                         </Grid>
