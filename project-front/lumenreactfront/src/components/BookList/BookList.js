@@ -2,10 +2,14 @@ import React, { Component } from 'react';
 import Grid from '@material-ui/core/Grid';
 import Book from './Book/Book';
 import axios from 'axios';
+import Fab from '@material-ui/core/Fab';
+import AddIcon from '@material-ui/icons/Add';
+import CreateBook from '../Dialogs/CreateBook/CreateBook';
 
 class BookList extends Component {
     state = {
-        books: []
+        books: [],
+        modalOpened: false
     };
     componentDidMount(){
         this.getBooks();
@@ -22,6 +26,14 @@ class BookList extends Component {
                 this.getBooks();
             })
     }
+    addButtonHandler = () => {
+        this.setState({modalOpened: true});
+    }
+
+    closeModalHandler = () =>{
+        this.setState({modalOpened: false});
+    }
+
     render(){
         return (
             <div>
@@ -35,6 +47,10 @@ class BookList extends Component {
                             ))}
                         </Grid>
                     ) : 'No books founded'}
+                <Fab color="primary" aria-label="add" onClick={this.addButtonHandler}>
+                    <AddIcon/>
+                </Fab>
+                <CreateBook open={this.state.modalOpened} handleClose={this.closeModalHandler}/>
             </div>
         )
     }
