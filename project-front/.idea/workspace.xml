@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b57c0767-2781-4e9c-8bf0-d769a9cd9250" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lumenreactfront/src/components/Dialogs/CreateBook/CreateBook.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../project-api/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../project-api/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lumenreactfront/src/components/BookList/BookList.js" beforeDir="false" afterPath="$PROJECT_DIR$/lumenreactfront/src/components/BookList/BookList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lumenreactfront/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/lumenreactfront/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lumenreactfront/src/components/Navbar/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/lumenreactfront/src/components/Navbar/Navbar.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -27,14 +26,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="76" />
-          <entry key="js" value="3162" />
+          <entry key="css" value="116" />
+          <entry key="js" value="3177" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="76" />
-          <entry key="JavaScript" value="3162" />
+          <entry key="CSS" value="116" />
+          <entry key="JavaScript" value="3177" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -67,7 +66,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lumenreactfront/src/components/BookList/BookList.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="491">
@@ -115,17 +114,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lumenreactfront/src/App.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="322">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lumenreactfront/src/components/Navbar/Navbar.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+            <state relative-caret-position="193">
+              <caret line="10" column="63" selection-start-line="10" selection-start-column="63" selection-end-line="10" selection-end-column="63" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -192,13 +191,13 @@
         <option value="$PROJECT_DIR$/lumenreactfront/src/components/BooksList/BooksList.js" />
         <option value="$PROJECT_DIR$/lumenreactfront/src/components/BooksList/Book/Book.js" />
         <option value="$PROJECT_DIR$/lumenreactfront/src/index.js" />
-        <option value="$PROJECT_DIR$/lumenreactfront/src/components/Navbar/Navbar.js" />
         <option value="$PROJECT_DIR$/lumenreactfront/src/components/BookList/Book/Book.js" />
-        <option value="$PROJECT_DIR$/lumenreactfront/src/App.css" />
         <option value="$PROJECT_DIR$/lumenreactfront/src/App.js" />
         <option value="$PROJECT_DIR$/lumenreactfront/src/components/Dialogs/CreateBook.js" />
         <option value="$PROJECT_DIR$/lumenreactfront/src/components/Dialogs/CreateBook/CreateBook.js" />
         <option value="$PROJECT_DIR$/lumenreactfront/src/components/BookList/BookList.js" />
+        <option value="$PROJECT_DIR$/lumenreactfront/src/App.css" />
+        <option value="$PROJECT_DIR$/lumenreactfront/src/components/Navbar/Navbar.js" />
       </list>
     </option>
   </component>
@@ -286,6 +285,15 @@
               <item name="lumenreactfront" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Dialogs" type="462c0819:PsiDirectoryNode" />
+              <item name="CreateBook" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project-front" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project-front" type="462c0819:PsiDirectoryNode" />
+              <item name="lumenreactfront" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="Navbar" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -324,12 +332,12 @@
       <option name="presentableId" value="Default" />
       <updated>1605390065736</updated>
       <workItem from="1605390068187" duration="11182000" />
-      <workItem from="1605577898250" duration="2092000" />
+      <workItem from="1605577898250" duration="2436000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13274000" />
+    <option name="totallyTimeSpent" value="13618000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
@@ -373,16 +381,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lumenreactfront/src/components/Navbar/Navbar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lumenreactfront/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
@@ -404,23 +402,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lumenreactfront/src/App.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lumenreactfront/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="54" selection-start-line="3" selection-start-column="54" selection-end-line="3" selection-end-column="54" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lumenreactfront/src/components/Dialogs/CreateBook.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -430,6 +411,16 @@
           <caret line="29" column="20" lean-forward="true" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lumenreactfront/src/components/BookList/BookList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="491">
+          <caret line="58" column="5" lean-forward="true" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -444,12 +435,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lumenreactfront/src/components/BookList/BookList.js">
+    <entry file="file://$PROJECT_DIR$/lumenreactfront/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="491">
-          <caret line="58" column="5" lean-forward="true" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
+        <state relative-caret-position="69">
+          <caret line="3" column="54" selection-start-line="3" selection-start-column="54" selection-end-line="3" selection-end-column="54" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lumenreactfront/src/App.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lumenreactfront/src/components/Navbar/Navbar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="10" column="63" selection-start-line="10" selection-start-column="63" selection-end-line="10" selection-end-column="63" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
