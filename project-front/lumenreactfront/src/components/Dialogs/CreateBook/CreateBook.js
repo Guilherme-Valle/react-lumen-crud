@@ -11,8 +11,27 @@ import {MuiPickersUtilsProvider, KeyboardDatePicker} from '@material-ui/pickers'
 
 
 const CreateBook = (props) => {
-    const handleDateChange = (date) => {
-      let date_publish = date;
+    const [book, setState] = React.useState(
+        {
+            date_publish: null,
+            title: "Example",
+            description: "Description of the book",
+            author: "Alvaro Calderón"
+        });
+
+    const handleDateChange = date => {
+        setState(prevState => ({
+            ...prevState,
+            date_publish: new Date(date).toISOString().slice(0, 10)
+        }));
+    };
+
+    const handleInputChange =  e => {
+        const { name, value } = e.target;
+        setState(prevState => ({
+            ...prevState,
+            [name]: value
+        }));
     };
     return (
         <Dialog open={props.open} onClose={props.handleClose}>
@@ -21,17 +40,20 @@ const CreateBook = (props) => {
                 <DialogContentText>
                     Preencha as informações acerca do livro que deseja adicionar.
                 </DialogContentText>
-                <TextField autoFocus margin="dense" id="title" label="Título" type="text" fullWidth value={props.title}/>
-                <TextField margin="dense" id="description" label="Descrição" multiline rows={4} fullWidth value={props.description}/>
-                <TextField margin="dense" id="author" label="Autor" type="text" fullWidth value={props.author}/>
+                <TextField autoFocus margin="dense" id="title" label="Título" type="text" name="title" fullWidth value={book.title}
+                onChange={handleInputChange}/>
+                <TextField margin="dense" id="description" label="Descrição" multiline rows={4} name="description" fullWidth value={book.description}
+                           onChange={handleInputChange}/>
+                <TextField margin="dense" id="author" label="Autor" type="text" name="author" fullWidth value={book.author}
+                           onChange={handleInputChange}/>
                 <MuiPickersUtilsProvider utils={DateFnsUtils}>
                     <KeyboardDatePicker
                         variant="inline"
-                        format="dd/MM/yyyy"
+                        format="yyyy/MM/dd"
                         margin="normal"
                         id="date-picker-inline"
                         label="Data de publicação"
-                        value={props.date_publish}
+                        value={book.date_publish}
                         onChange={handleDateChange}
                         fullWidth
                         KeyboardButtonProps={{
@@ -44,7 +66,7 @@ const CreateBook = (props) => {
                 <Button onClick={props.handleClose} color="primary">
                     Cancelar
                 </Button>
-                <Button onClick={props.handleClose} color="primary">
+                <Button onClick={() => props.handleSubmit(book)} color="primary">
                     Salvar
                 </Button>
             </DialogActions>

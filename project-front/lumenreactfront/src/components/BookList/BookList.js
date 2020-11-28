@@ -13,26 +13,37 @@ class BookList extends Component {
     };
     componentDidMount(){
         this.getBooks();
-    }
+    };
     getBooks(){
         axios.get('http://localhost:8000/api/v1/books')
             .then(res => {
                 this.setState({books: res.data});
             })
-    }
+    };
     deleteBookHandler(id){
         axios.delete(`http://localhost:8000/api/v1/book/${id}`)
             .then(() => {
                 this.getBooks();
             })
-    }
+    };
     addButtonHandler = () => {
         this.setState({modalOpened: true});
-    }
+    };
 
     closeModalHandler = () =>{
         this.setState({modalOpened: false});
-    }
+    };
+
+    submitModalHandler = (book) =>
+    {
+        axios.post('http://localhost:8000/api/v1/book', { ...book })
+            .then(res => {
+                if (res){
+                    this.getBooks();
+                    this.setState({modalOpened: false});
+                }
+            })
+    };
 
     render(){
         return (
@@ -50,7 +61,9 @@ class BookList extends Component {
                 <Fab color="primary" aria-label="add" onClick={this.addButtonHandler}>
                     <AddIcon/>
                 </Fab>
-                <CreateBook open={this.state.modalOpened} handleClose={this.closeModalHandler}/>
+                <CreateBook open={this.state.modalOpened} handleClose={this.closeModalHandler}
+                            handleSubmit={this.submitModalHandler}
+                />
             </div>
         )
     }

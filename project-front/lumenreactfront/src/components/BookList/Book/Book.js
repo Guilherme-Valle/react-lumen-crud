@@ -14,7 +14,10 @@ const Book = (props) => {
                     <CardContent>
                         <Typography gutterBottom variant="h2" component="h2">{props.book.title}</Typography>
                         <Typography component="p">{props.book.description}</Typography>
-                        <Typography component="p">Autor: {props.book.author}</Typography>
+                        <Typography component="p">Author: {props.book.author}</Typography>
+                        <Typography component="p">Date publish:
+                            {props.book.date_publish !== null ?  ' ' + new Date(props.book.date_publish).toISOString().slice(0, 10) : ''}</Typography>
+
                     </CardContent>
                     <CardActions>
                         <IconButton aria-label="delete" onClick={props.delete}>
