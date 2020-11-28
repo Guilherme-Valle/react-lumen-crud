@@ -9,15 +9,25 @@ import TextField from '@material-ui/core/TextField';
 import DateFnsUtils from '@date-io/date-fns';
 import {MuiPickersUtilsProvider, KeyboardDatePicker} from '@material-ui/pickers';
 
-
 const CreateBook = (props) => {
-    const [book, setState] = React.useState(
-        {
-            date_publish: null,
-            title: "Example",
-            description: "Description of the book",
-            author: "Alvaro Calderón"
-        });
+    let obj = {
+        id: null,
+        date_publish: null,
+        title: "Example",
+        description: "Description of the book",
+        author: "Alvaro Calderón"
+    };
+
+    let [book, setState] = React.useState(obj);
+
+    /** Rook to watch book object */
+    React.useEffect(() => {
+        if (props.selectedBook !== null) {
+            setState(props.selectedBook);
+        } else {
+            setState(obj);
+        }
+    }, [props.selectedBook]);
 
     const handleDateChange = date => {
         setState(prevState => ({
@@ -26,13 +36,14 @@ const CreateBook = (props) => {
         }));
     };
 
-    const handleInputChange =  e => {
-        const { name, value } = e.target;
+    const handleInputChange = e => {
+        const {name, value} = e.target;
         setState(prevState => ({
             ...prevState,
             [name]: value
         }));
     };
+
     return (
         <Dialog open={props.open} onClose={props.handleClose}>
             <DialogTitle>Criar livro</DialogTitle>
@@ -40,11 +51,14 @@ const CreateBook = (props) => {
                 <DialogContentText>
                     Preencha as informações acerca do livro que deseja adicionar.
                 </DialogContentText>
-                <TextField autoFocus margin="dense" id="title" label="Título" type="text" name="title" fullWidth value={book.title}
-                onChange={handleInputChange}/>
-                <TextField margin="dense" id="description" label="Descrição" multiline rows={4} name="description" fullWidth value={book.description}
+                <TextField autoFocus margin="dense" id="title" label="Título" type="text" name="title" fullWidth
+                           value={book.title}
                            onChange={handleInputChange}/>
-                <TextField margin="dense" id="author" label="Autor" type="text" name="author" fullWidth value={book.author}
+                <TextField margin="dense" id="description" label="Descrição" multiline rows={4} name="description"
+                           fullWidth value={book.description}
+                           onChange={handleInputChange}/>
+                <TextField margin="dense" id="author" label="Autor" type="text" name="author" fullWidth
+                           value={book.author}
                            onChange={handleInputChange}/>
                 <MuiPickersUtilsProvider utils={DateFnsUtils}>
                     <KeyboardDatePicker

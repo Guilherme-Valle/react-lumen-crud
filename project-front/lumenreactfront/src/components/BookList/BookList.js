@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import Grid from '@material-ui/core/Grid';
 import Book from './Book/Book';
 import axios from 'axios';
@@ -9,43 +9,61 @@ import CreateBook from '../Dialogs/CreateBook/CreateBook';
 class BookList extends Component {
     state = {
         books: [],
-        modalOpened: false
+        modalOpened: false,
+        selectedBook: null
     };
-    componentDidMount(){
+
+    componentDidMount() {
         this.getBooks();
     };
-    getBooks(){
+
+    getBooks() {
         axios.get('http://localhost:8000/api/v1/books')
             .then(res => {
                 this.setState({books: res.data});
             })
     };
-    deleteBookHandler(id){
+
+    deleteBookHandler(id) {
         axios.delete(`http://localhost:8000/api/v1/book/${id}`)
             .then(() => {
                 this.getBooks();
             })
     };
+
+    editBookHandler(book) {
+        this.setState({selectedBook: book, modalOpened: true});
+    }
+
     addButtonHandler = () => {
         this.setState({modalOpened: true});
     };
 
-    closeModalHandler = () =>{
-        this.setState({modalOpened: false});
+    closeModalHandler = () => {
+        this.setState({modalOpened: false, selectedBook: null});
     };
 
-    submitModalHandler = (book) =>
-    {
-        axios.post('http://localhost:8000/api/v1/book', { ...book })
-            .then(res => {
-                if (res){
-                    this.getBooks();
-                    this.setState({modalOpened: false});
-                }
-            })
+    submitModalHandler = (book) => {
+        if (book.id === null) {
+            axios.post('http://localhost:8000/api/v1/book', {...book})
+                .then(res => {
+                    if (res) {
+                        this.getBooks();
+                        this.setState({modalOpened: false});
+                    }
+                })
+        } else {
+            axios.put(`http://localhost:8000/api/v1/book/${book.id}`, {...book})
+                .then(res => {
+                    if (res) {
+                        this.getBooks();
+                        this.setState({modalOpened: false});
+                    }
+                })
+        }
     };
 
-    render(){
+    render() {
         return (
             <div>
                 {this.state.books ?
@@ -53,7 +71,9 @@ class BookList extends Component {
                         <Grid container spacing={10} style={{padding: 24}}>
                             {this.state.books.map(currentBook => (
                                 <Grid item xs={12} sm={6} lg={4} xl={3} key={currentBook.id}>
-                                    <Book book={currentBook} delete={() => this.deleteBookHandler(currentBook.id)} />
+                                    <Book book={currentBook}
+                                          delete={() => this.deleteBookHandler(currentBook.id)}
+                                          edit={() => this.editBookHandler(currentBook)}/>
                                 </Grid>
                             ))}
                         </Grid>
@@ -62,7 +82,7 @@ class BookList extends Component {
                     <AddIcon/>
                 </Fab>
                 <CreateBook open={this.state.modalOpened} handleClose={this.closeModalHandler}
-                            handleSubmit={this.submitModalHandler}
+                            handleSubmit={this.submitModalHandler} selectedBook={this.state.selectedBook}
                 />
             </div>
         )

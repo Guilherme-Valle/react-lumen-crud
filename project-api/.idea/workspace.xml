@@ -22,6 +22,7 @@
     <list default="true" id="e88685e2-1e4e-4b74-8718-83d124f4f1eb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../project-front/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../project-front/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../project-front/lumenreactfront/src/components/BookList/Book/Book.js" beforeDir="false" afterPath="$PROJECT_DIR$/../project-front/lumenreactfront/src/components/BookList/Book/Book.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../project-front/lumenreactfront/src/components/BookList/BookList.js" beforeDir="false" afterPath="$PROJECT_DIR$/../project-front/lumenreactfront/src/components/BookList/BookList.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../project-front/lumenreactfront/src/components/Dialogs/CreateBook/CreateBook.js" beforeDir="false" afterPath="$PROJECT_DIR$/../project-front/lumenreactfront/src/components/Dialogs/CreateBook/CreateBook.js" afterDir="false" />
     </list>
@@ -181,7 +182,7 @@
       <updated>1605389954732</updated>
       <workItem from="1605389956028" duration="3610000" />
       <workItem from="1605577874787" duration="1465000" />
-      <workItem from="1606592042976" duration="2610000" />
+      <workItem from="1606592042976" duration="5042000" />
     </task>
     <servers />
   </component>
